@@ -12,10 +12,25 @@
 ## Solution
 
 1. `sudo apt install docker-compose -y`
-2. `docker-compose --help`
+2. `docker compose --help`
 3. `mkdir wp_site`
 4. `cd wp_site/`
-5. `nano docker-compose.yml`
+5. `nano docker compose.yml`
 6. `ls`
-7. `docker-compose up -d`
-8. `cat docker-compose.yml`
+7. `docker compose up -d`
+8. `cat docker compose.yml`
+
+
+## Task
+
+1. Start all services (containers) defined in the docker-compose.yml file.
+2. Stop and remove all running services along with their associated containers.
+3. View the current status of Docker Compose services.
+4. View the logs of all Docker Compose services.
+
+## Solution
+
+1. `docker compose up`
+2. `docker compose down`
+3. `docker compose ps`
+4. `docker compose logs`

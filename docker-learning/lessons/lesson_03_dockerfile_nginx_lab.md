@@ -11,10 +11,10 @@ Create a Dockerfile to build a container with the Nginx web server that meets th
 7. Configure Nginx to run in foreground mode when the container starts.
 
 
-FROM debian
-MAINTAINER devschmied
-RUN apt-get update
-RUN apt-get install nginx -y
-VOLUME "/var/www/html"
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+`FROM debian`
+`MAINTAINER devschmied`
+`RUN apt-get update`
+`RUN apt-get install nginx -y`
+`VOLUME "/var/www/html"`
+`EXPOSE 80`
+`CMD ["nginx", "-g", "daemon off;"]`
